@@ -1,0 +1,1 @@
+You can create drafts for your page parts.

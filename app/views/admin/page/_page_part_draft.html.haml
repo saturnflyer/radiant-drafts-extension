@@ -1,0 +1,5 @@
+- if @page.parts
+  %p it has a draft
+- else
+  %p no draft
+= puts @page.parts.to_json
