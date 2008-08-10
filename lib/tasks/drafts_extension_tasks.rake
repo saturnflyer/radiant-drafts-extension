@@ -2,6 +2,9 @@ namespace :radiant do
   namespace :extensions do
     namespace :drafty do
       
+      desc "Runs the migrate and update tasks of the Drafts extension"
+      task :install => [:environment, :migrate, :update]
+      
       desc "Runs the migration of the Drafts extension"
       task :migrate => :environment do
         require 'radiant/extension_migrator'
