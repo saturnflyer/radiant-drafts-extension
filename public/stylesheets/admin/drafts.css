@@ -1,0 +1,7 @@
+.part .draft {
+	background: #cb9;
+	padding: 1em;
+}
+	.part .draft textarea {
+		width: 100%;
+	}
