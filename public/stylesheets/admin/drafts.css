@@ -1,7 +1,11 @@
 .part .draft {
-	background: #cb9;
-	padding: 1em;
+	background: #eee;
+	border: 1px dashed #900;
+	padding: 0 1em 1em;
 }
+	.part .draft h3 {
+		color: #600;
+	}
 	.part .draft textarea {
 		width: 100%;
 	}
