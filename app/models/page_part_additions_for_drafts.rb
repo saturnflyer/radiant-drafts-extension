@@ -6,6 +6,8 @@ module PagePartAdditionsForDrafts
       def has_draft?
         page_part_draft?
       end
+      
+      alias_method :draft, :page_part_draft
     }
   end
   module InstanceMethods
