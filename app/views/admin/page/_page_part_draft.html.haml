@@ -1,5 +1,6 @@
-- if @page.parts
-  %p it has a draft
-- else
-  %p no draft
-= puts @page.parts.to_json
+.draft
+  %h3= "#{@page.parts[@index].name} draft"
+  - fields_for :draft do |d|
+    %p= d.text_area :content, :class => 'textarea', :id => "part_#{@index}_draft", :name => "part[#{@index}][draft]"
+- include_javascript 'admin/drafts.js'
+- include_stylesheet 'admin/drafts.css'
