@@ -1,6 +1,6 @@
 namespace :radiant do
   namespace :extensions do
-    namespace :drafty do
+    namespace :drafts do
       
       desc "Runs the migrate and update tasks of the Drafts extension"
       task :install => [:environment, :migrate, :update]
