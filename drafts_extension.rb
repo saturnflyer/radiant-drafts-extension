@@ -9,6 +9,7 @@ class DraftsExtension < Radiant::Extension
     }
     
     if admin.page.edit
+      admin.page.edit.add :part_controls, 'draft_controls'
       admin.page.edit.add :part_controls, 'page_part_draft'
     end
   end
