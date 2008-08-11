@@ -1,0 +1,5 @@
+- unless @page.new_record?
+  #draft_controls
+    = link_to "add draft", admin_new_page_part_draft_path(@page), :id => 'add_draft'
+  - include_javascript 'admin/drafts.js'
+  - include_stylesheet 'admin/drafts.css'
