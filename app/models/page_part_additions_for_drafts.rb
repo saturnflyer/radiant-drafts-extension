@@ -13,9 +13,9 @@ module PagePartAdditionsForDrafts
     def draft=(details)
       puts details
       unless draft.nil?
-        draft.update_attribute('content',details)
+        draft.update_attribute('content', details)
       else
-        @draft = PagePartDraft.new(:content => 'details', :page_part_id => self.id, :filter_id => self.filter_id)
+        @draft = PagePartDraft.new(:content => details, :page_part_id => self.id, :filter_id => self.filter_id)
         draft = @draft
         draft.save!
       end
